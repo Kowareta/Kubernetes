@@ -1,0 +1,8 @@
+apiVersion: extensions/v1
+kind: Ingress
+metadata:
+  name: gethostname-ingress
+spec:
+  backend:
+    serviceName: gethostname-service
+    servicePort: 80
